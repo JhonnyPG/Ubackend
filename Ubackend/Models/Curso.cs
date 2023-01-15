@@ -17,10 +17,18 @@ namespace Ubackend.Models
         public string Objetivo { get; set; } = string.Empty;
         [Required]
         public string Requisitos  { get; set; } = string.Empty;
-        public NivelEnum NivelEnum { get; set; }
+        public NivelEnum NivelEnum { get; set; } = NivelEnum.Basico;
+
+        [Required]
+        public ICollection<Category> Categories { get; set; } = new List <Category>();
+        [Required]
+        public ICollection<Student> Students { get; set; } = new List <Student>();
+        [Required]
+        public Chapter Chapter { get; set; } = new Chapter();
        
 
 
 
     }
 }
+;

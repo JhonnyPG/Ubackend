@@ -8,7 +8,8 @@ namespace Ubackend.Models.Enums
     {
         Basico,
         Intermedio,
-        Avanzado
+        Avanzado,
+        Experto
     
     }
 }
