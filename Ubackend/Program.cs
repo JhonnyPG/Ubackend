@@ -4,9 +4,10 @@ using Ubackend.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// add jwt 
+//builder.Services.AddJwtTokenServices(builder.Configuration)
+
 // Add services to the container.
-
-
 builder.Services.AddControllers();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
